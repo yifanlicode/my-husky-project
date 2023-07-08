@@ -24,12 +24,11 @@
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "lint": "prettier --check .",
-    "format": "prettier --write ."
+    "pre-commit-check": "npm run prettier && npm run lint && npm run test"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run pre-commit-check"
     }
   },
   "lint-staged": {

@@ -1,96 +1,63 @@
-# Getting Started with my UI Components Library
+# Get Started with the Husky Hooks Project
 
-This is a UI component library/toolkit built using [Create React App](https://github.com/facebook/create-react-app) and [Storybook](https://storybook.js.org/). It contains various reusable components that adhere to the given requirements.
+This project contains a collection of reusable React components.
 
-## Getting Started
+## Installation
 
-To use this UI component library in your project, follow these steps:
+To install the project and its dependencies, run the following command:
 
-### Prerequisites
-
-You need to have [Node.js](https://nodejs.org/en/) installed on your machine. You can check if you have it installed by running the following command in your terminal:
-
-```bash
-node -v
-```
-
-If you don't have Node.js installed, you can download it from [here](https://nodejs.org/en/download/).
-
-### Installation
-
-1. Clone the repo to your local machine:
-
-````bash
-git clone https://github.com/yifanlicode/my-components
-```bash
-
-2. Change directory to the project folder:
-
-```bash
-cd my-components
-````
-
-3.Install the dependencies:
-
-```bash
+```shell
 npm install
 ```
 
-### Development
+## Development
 
-To run the app in the development mode, run the following command:
+To start the development server, run the following command:
 
-```bash
+```shell
 npm start
 ```
 
-### Building
+## Build
 
-To build the app for production, run the following command:
+To build the project, run the following command:
 
-```bash
+```shell
 npm run build
 ```
 
-### Testing
+## Storybook
 
-To launch the test runner in the interactive watch mode, run the following command:
+To start the storybook server, run the following command:
 
-```bash
-npm test
+```shell
+npm run storybook
 ```
 
-This will execute the test cases for each component and display the test results.
+## Husky Hooks
 
-## Introduction to Component Library
+This project uses [Husky] hooks to ensure that the code is linted and tested before it is committed.
 
-### Components Structure
+Prettier is used to format the code. To format the code, run the following command:
 
-Each component folder within the project follows a specific structure:
-
-```bash
-ComponentName
-├── ComponentName.js
-├── ComponentName.test.js
-├── ComponentName.stories.js
-├── index.js
-└── styles.js
+```shell
+npm run format
 ```
 
-### Useage Example
+To lint the code, run the following command:
 
-To use a component in your project, import the component from the library:
-
-```bash
-import { Button } from 'my-components';
+```shell
+npm run lint
 ```
 
-Then, use the component in your project:
+To run the tests, run the following command:
 
-```bash
-<Button>Click Me</Button>
+```shell
+npm run test
 ```
 
-## License
+If you want to skip the hooks, run the following command:
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```shell
+git commit --no-verify
+```
