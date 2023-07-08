@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 // contain 4 components: TableHeader, TableCell, TableFooter, TableRow
 // ALL of these components are used in the Table component
@@ -39,16 +39,16 @@ const TableContainer = styled.table<TableProps>`
   border-collapse: collapse;
   width: 100%;
   display: table;
-  background-color: ${(props) => (props.disabled ? "#f2f2f2" : "#ffffff")};
-  cursor: ${(props) => (props.disabled ? "not-allowed" : "default")};
+  background-color: ${(props) => (props.disabled ? '#f2f2f2' : '#ffffff')};
+  cursor: ${(props) => (props.disabled ? 'not-allowed' : 'default')};
   opacity: ${(props) => (props.disabled ? 0.6 : 1)};
   transition: opacity 0.3s ease;
 `;
 
 // TableHeader component
 const TableHeader = styled.thead<TableHeaderProps>`
-  background-color: ${(props) => (props.disabled ? "#f2f2f2" : "#ffffff")};
-  cursor: ${(props) => (props.disabled ? "not-allowed" : "default")};
+  background-color: ${(props) => (props.disabled ? '#f2f2f2' : '#ffffff')};
+  cursor: ${(props) => (props.disabled ? 'not-allowed' : 'default')};
   opacity: ${(props) => (props.disabled ? 0.6 : 1)};
   transition: opacity 0.3s ease;
   font-weight: bold;
@@ -61,16 +61,16 @@ const TableCell = styled.td<TableCellProps>`
   text-align: center;
   padding: 8px;
   display: table-cell;
-  background-color: ${(props) => (props.disabled ? "#f2f2f2" : "#ffffff")};
-  cursor: ${(props) => (props.disabled ? "not-allowed" : "default")};
+  background-color: ${(props) => (props.disabled ? '#f2f2f2' : '#ffffff')};
+  cursor: ${(props) => (props.disabled ? 'not-allowed' : 'default')};
   opacity: ${(props) => (props.disabled ? 0.6 : 1)};
   transition: opacity 0.3s ease;
 `;
 
 // TableRow component
 const TableRow = styled.tr<TableRowProps>`
-  background-color: ${(props) => (props.disabled ? "#f2f2f2" : "#ffffff")};
-  cursor: ${(props) => (props.disabled ? "not-allowed" : "default")};
+  background-color: ${(props) => (props.disabled ? '#f2f2f2' : '#ffffff')};
+  cursor: ${(props) => (props.disabled ? 'not-allowed' : 'default')};
   opacity: ${(props) => (props.disabled ? 0.6 : 1)};
   transition: opacity 0.3s ease;
   font-weight: normal;
@@ -84,8 +84,8 @@ const TableRow = styled.tr<TableRowProps>`
 
 // TableFooter component
 const TableFooter = styled.tfoot<TableFooterProps>`
-  background-color: ${(props) => (props.disabled ? "#f2f2f2" : "#ffffff")};
-  cursor: ${(props) => (props.disabled ? "not-allowed" : "default")};
+  background-color: ${(props) => (props.disabled ? '#f2f2f2' : '#ffffff')};
+  cursor: ${(props) => (props.disabled ? 'not-allowed' : 'default')};
   opacity: ${(props) => (props.disabled ? 0.6 : 1)};
   transition: opacity 0.3s ease;
   font-weight: bold;

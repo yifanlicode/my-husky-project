@@ -3,10 +3,10 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import Button from './Button';
 import { ButtonProps } from './Button.types';
-import "jest-styled-components";
+import 'jest-styled-components';
 
 const testButton = (componentProps: ButtonProps) => {
-    render(<Button {...componentProps} />);
+  render(<Button {...componentProps} />);
 
   const buttonElement = screen.getByRole('button');
   expect(buttonElement).toBeInTheDocument();

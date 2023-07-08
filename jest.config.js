@@ -1,1 +1,1 @@
-export const testMatch = ["<rootDir>/src/components/**/*.tests.tsx"];
+export const testMatch = ['<rootDir>/src/components/**/*.tests.tsx'];

@@ -1,18 +1,13 @@
-import React from "react";
-import { Story, Meta } from "@storybook/react";
-import Table, {
-  TableHeader,
-  TableCell,
-  TableRow,
-  TableFooter,
-} from "./Table";
-import { TableProps } from "./Table.types";
+import React from 'react';
+import { Story, Meta } from '@storybook/react';
+import Table, { TableHeader, TableCell, TableRow, TableFooter } from './Table';
+import { TableProps } from './Table.types';
 
 export default {
-  title: "Components/Table",
+  title: 'Components/Table',
   component: Table,
   argTypes: {
-    disabled: { control: "boolean" },
+    disabled: { control: 'boolean' },
   },
 } as Meta;
 

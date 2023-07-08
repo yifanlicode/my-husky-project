@@ -1,13 +1,13 @@
-import React from "react";
-import { Story, Meta } from "@storybook/react";
-import Card from "./Card";
+import React from 'react';
+import { Story, Meta } from '@storybook/react';
+import Card from './Card';
 
 export default {
-  title: "Components/Card",
+  title: 'Components/Card',
   component: Card,
   argTypes: {
     disabled: {
-      control: "boolean",
+      control: 'boolean',
     },
   },
 } as Meta;

@@ -27,5 +27,3 @@ Disabled.args = {
   alt: 'Img Alt Text',
   disabled: true,
 };
-
-

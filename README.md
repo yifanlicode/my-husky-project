@@ -1,12 +1,10 @@
-# Getting Started with my UI Components Library 
+# Getting Started with my UI Components Library
 
 This is a UI component library/toolkit built using [Create React App](https://github.com/facebook/create-react-app) and [Storybook](https://storybook.js.org/). It contains various reusable components that adhere to the given requirements.
-
 
 ## Getting Started
 
 To use this UI component library in your project, follow these steps:
-
 
 ### Prerequisites
 
@@ -22,21 +20,22 @@ If you don't have Node.js installed, you can download it from [here](https://nod
 
 1. Clone the repo to your local machine:
 
-```bash
-git clone https://github.com/yifanlicode/my-components 
+````bash
+git clone https://github.com/yifanlicode/my-components
 ```bash
 
 2. Change directory to the project folder:
 
 ```bash
 cd my-components
-```
+````
 
 3.Install the dependencies:
 
 ```bash
 npm install
 ```
+
 ### Development
 
 To run the app in the development mode, run the following command:
@@ -44,6 +43,7 @@ To run the app in the development mode, run the following command:
 ```bash
 npm start
 ```
+
 ### Building
 
 To build the app for production, run the following command:
@@ -59,6 +59,7 @@ To launch the test runner in the interactive watch mode, run the following comma
 ```bash
 npm test
 ```
+
 This will execute the test cases for each component and display the test results.
 
 ## Introduction to Component Library
@@ -75,6 +76,7 @@ ComponentName
 ├── index.js
 └── styles.js
 ```
+
 ### Useage Example
 
 To use a component in your project, import the component from the library:
@@ -92,4 +94,3 @@ Then, use the component in your project:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
-import  HeroImageProps from './HeroImage.types';
+import HeroImageProps from './HeroImage.types';
 import HeroImage from './HeroImage';
 
 export default {

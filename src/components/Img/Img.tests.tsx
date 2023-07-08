@@ -16,6 +16,5 @@ describe('Img Component', () => {
     render(<Img src={src} alt={alt} disabled />);
     const heroImage = screen.getByAltText(alt);
     expect(heroImage).toHaveStyle('background-color: #f2f2f2');
-
   });
 });

@@ -13,7 +13,7 @@ const Button: React.FC<ButtonProps> = ({
   text = 'Buttons',
   onClick,
 }) => {
-  const defaultTextColor = '#333333';
+  const defaultTextColor = '#333';
   const defaultBackgroundColor = '#f2f2f2';
   const primaryTextColor = '#ffffff';
   const primaryBackgroundColor = '#7bbcf8';

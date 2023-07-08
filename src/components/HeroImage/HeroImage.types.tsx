@@ -1,4 +1,3 @@
-
 export interface HeroImageProps
   extends React.ImgHTMLAttributes<HTMLImageElement> {
   src: string;

@@ -24,14 +24,16 @@
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "pre-commit": "npm run lint && npm run test",
-    "notify-commit": "node -e \"require('node-notifier').notify({ title: 'Commit succeeded', message: 'Your commit passed all checks!' })\""
+    "lint": "prettier --check .",
+    "format": "prettier --write ."
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run pre-commit",
-      "commit-msg": "npm run notify-commit"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*": "prettier --write"
   },
   "browserslist": {
     "production": [

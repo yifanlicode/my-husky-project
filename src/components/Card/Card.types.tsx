@@ -20,8 +20,6 @@ export interface CardProps {
    * @default "black"
    * */
   textColor?: string;
-
-  
 }
 
 export default CardProps;

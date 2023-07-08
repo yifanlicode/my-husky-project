@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 interface DropdownProps {
   options: string[];
@@ -11,12 +11,12 @@ interface DropdownProps {
 const StyledDropdown = styled.select<DropdownProps>`
   padding: 8px;
   font-size: 14px;
-  color: ${(props) => (props.disabled ? "#999999" : "#333333")};
-  border: 1px solid ${(props) => (props.disabled ? "#999999" : "#333333")};
+  color: ${(props) => (props.disabled ? '#999999' : '#333333')};
+  border: 1px solid ${(props) => (props.disabled ? '#999999' : '#333333')};
   border-radius: 4px;
-  background-color: ${(props) => (props.disabled ? "#f2f2f2" : "#ffffff")};
+  background-color: ${(props) => (props.disabled ? '#f2f2f2' : '#ffffff')};
   outline: none;
-  cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
+  cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
 `;
 
 const Dropdown: React.FC<DropdownProps> = ({

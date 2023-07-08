@@ -1,23 +1,23 @@
-import React from "react";
-import { Story, Meta } from "@storybook/react";
-import { TableRow } from "./Table";
+import React from 'react';
+import { Story, Meta } from '@storybook/react';
+import { TableRow } from './Table';
 
 export default {
-  title: "Components/Table/TableRow",
+  title: 'Components/Table/TableRow',
   component: TableRow,
   argTypes: {
-    disabled: { control: "boolean" },
+    disabled: { control: 'boolean' },
   },
 } as Meta;
 
 const Template: Story = (args) => <TableRow {...args} />;
 export const Default = Template.bind({});
 Default.args = {
-  children: "TableRow",
+  children: 'TableRow',
 };
 
 export const Disabled = Template.bind({});
 Disabled.args = {
-  children: "TableRow",
+  children: 'TableRow',
   disabled: true,
 };

@@ -14,7 +14,6 @@ const StyledText = styled.span<TextProps>`
   transition: opacity 0.3s ease;
 `;
 
-
 const Text: React.FC<TextProps> = ({ children, disabled }) => {
   return <StyledText disabled={disabled}>{children}</StyledText>;
 };

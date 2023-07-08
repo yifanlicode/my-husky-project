@@ -1,22 +1,22 @@
 // radiobutton.test.tsx
-import { render } from "@testing-library/react";
-import RadioButton from "./RadioButton";
+import { render } from '@testing-library/react';
+import RadioButton from './RadioButton';
 
-describe("RadioButton", () => {
-  it("should be visible", () => {
+describe('RadioButton', () => {
+  it('should be visible', () => {
     const { getByLabelText } = render(
       <RadioButton
         id="radio1"
         label="Option 1"
         checked={false}
         onChange={() => {}}
-      />
+      />,
     );
-    const radioButton = getByLabelText("Option 1");
+    const radioButton = getByLabelText('Option 1');
     expect(radioButton).toBeInTheDocument();
   });
 
-  it("should change background color when disabled", () => {
+  it('should change background color when disabled', () => {
     const { getByLabelText } = render(
       <RadioButton
         id="radio3"
@@ -24,9 +24,9 @@ describe("RadioButton", () => {
         checked={false}
         onChange={() => {}}
         disabled
-      />
+      />,
     );
-    const radioButton = getByLabelText("Option 3");
-    expect(radioButton).toHaveStyle("background-color: #f2f2f2");
+    const radioButton = getByLabelText('Option 3');
+    expect(radioButton).toHaveStyle('background-color: #f2f2f2');
   });
 });
