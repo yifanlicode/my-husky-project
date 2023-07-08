@@ -23,14 +23,13 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "pre-commit": "npm run lint && npm run test"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest",
-      "plugin:storybook/recommended"
-    ]
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run pre-commit"
+    }
   },
   "browserslist": {
     "production": [
@@ -54,9 +53,13 @@
     "@storybook/react": "^7.0.22",
     "@storybook/react-webpack5": "^7.0.22",
     "@storybook/testing-library": "^0.0.14-next.2",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "eslint": "^8.44.0",
     "eslint-plugin-storybook": "^0.6.12",
-    "prettier": "^3.0.0-alpha.6",
+    "husky": "^8.0.3",
+    "prettier": "^3.0.0",
     "prop-types": "^15.8.1",
     "storybook": "^7.0.22",
     "webpack": "^5.88.0"
